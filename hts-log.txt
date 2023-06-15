@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 15 Jun 2023 13:09:00 at https://akamishra.github.io/akash.mishra2.github.io/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://akamishra.github.io/akash.mishra2.github.io/ -O1 "C:\Users\91829\Desktop\htmls\bodybuilding" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:09:17	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://akamishra.github.io/akash.mishra2.github.io/)
+13:09:17	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/css/bootstrap.min.css (from https://akamishra.github.io/akash.mishra2.github.io/)
+13:09:17	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/css/mdb.min.css (from https://akamishra.github.io/akash.mishra2.github.io/)
+13:09:17	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/css/style.css (from https://akamishra.github.io/akash.mishra2.github.io/)
+13:09:27	Error: 	"Not Found" (404) at link https://akamishra.github.io/helpers/getObjectProperty.js (from assets.adobedtm.com/ee2879bff7d5/1c541fa7c847/launch-0f85c087132e-development.min.js)
+13:09:27	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/Trident/ (from assets.adobedtm.com/ee2879bff7d5/1c541fa7c847/launch-0f85c087132e-development.min.js)
+13:09:27	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/get (from assets.adobedtm.com/ee2879bff7d5/1c541fa7c847/launch-0f85c087132e-development.min.js)
+13:09:30	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/mov_bbb.ogg (from https://akamishra.github.io/akash.mishra2.github.io/services.html)
+13:09:30	Warning: 	Retry after error -5 (Unable to get server's address: No such host is known. ) at link abacustraining6.india.eclerx.com/s_code.js (from https://akamishra.github.io/akash.mishra2.github.io/services.html)
+13:09:31	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/img/yogpg.jpg (from https://akamishra.github.io/akash.mishra2.github.io/yogaclass.html)
+13:09:31	Error: 	"Not Found" (404) at link https://akamishra.github.io/akash.mishra2.github.io/img/steamroompg.jpg (from https://akamishra.github.io/akash.mishra2.github.io/steamroom.html)
+13:09:31	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link abacustraining6.india.eclerx.com/s_code.js (from https://akamishra.github.io/akash.mishra2.github.io/services.html)
+13:09:31	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link abacustraining6.india.eclerx.com/s_code.js (from https://akamishra.github.io/akash.mishra2.github.io/services.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 31 seconds : 59 links scanned, 45 files written (7100550 bytes overall) [6406928 bytes received at 206675 bytes/sec], 1197371 bytes transferred using HTTP compression in 36 files, ratio 30%, 3.2 requests per connection
+(11 errors, 2 warnings, 0 messages)

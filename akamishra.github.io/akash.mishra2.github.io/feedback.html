@@ -1,0 +1,389 @@
+<!Doctype HTML>
+<html>
+	
+<!-- Mirrored from akamishra.github.io/akash.mishra2.github.io/feedback.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 07:39:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		
+		<script src="../../assets.adobedtm.com/ee2879bff7d5/1c541fa7c847/launch-0f85c087132e-development.min.js" async></script>
+		
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQJ5TDV');</script>
+		
+<script>
+	function addEvent(el, evt, fn) {
+  if (el.addEventListener) {
+    el.addEventListener(evt, fn);
+  } else if (el.attachEvent) {
+    el.attachEvent('on' + evt, function(evt) {
+      fn.call(el, evt);
+    });
+  } else if (typeof el['on' + evt] === 'undefined' || el['on' + evt] === null) {
+    el['on' + evt] = function(evt) {
+      fn.call(el, evt);
+    };
+  }
+}
+	
+	addEvent(window, 'message', function(message) {
+
+  var dataLayer = window.dataLayer = window.dataLayer || [];
+
+  if (message.data === 'formSubmit' && message.origin === 'IFRAME_PROTOCOL_HOSTNAME_AND_PORT') {
+    dataLayer.push({
+      'event': 'formSubmit'
+    });
+  }
+
+});
+		</script>	
+<!-- End Google Tag Manager -->
+	<title>feedback</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+		<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>		
+		.form-group
+		{
+		height:50px;
+		width:500px;
+		}			
+			         
+		</style>
+		<script>
+		
+			
+		/*
+		function validateFeedback()
+		{
+			var input = document.getElementById("name").value;			
+			var namepattern = /^[a-zA-Z]+$/;
+			var emailpattern = /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.([a-zA-Z]{2,4})$/;
+			if(input=="")
+			{
+				document.getElementById("name").value="";			
+				document.getElementById("nameval").innerHTML="Please enter your name";
+				input.focus();
+				return false;
+			}
+			else if(!isNaN(input))
+			{
+			document.getElementById("name").value="";			
+			document.getElementById("nameval").innerHTML="Numbers not allowed";				                  
+            input.focus();
+			}
+			else if (input.length > 20)
+                {
+                    document.getElementById("name").value="";			
+                    document.getElementById('namenameval').innerHTML = "Please enter less than 20 characters";
+                    input.focus();
+                    return false;
+					}
+			else if ((!namepattern.test(input)))
+                {
+					document.getElementById("name").value="";			
+                    document.getElementById('nameval').innerHTML = "Please enter only alphabets";                    
+                    x.focus();
+                    return false;
+				}
+				document.getElementById('nameval').innerHTML = "";
+				
+			 input = document.getElementById("email").value;
+			if (input =="")
+             {                    
+                    document.getElementById('emailval').innerHTML = "Please enter the email id.";
+                    input.focus();
+                    return false;
+			 }
+			else if(!emailpattern.test(input))
+			{
+					document.getElementById('email').value = "";
+					document.getElementById('emailval').innerHTML = "Email Id not valid";
+					input.focus();
+					return false;
+			}
+			document.getElementById('emailval').innerHTML = "";
+			
+			input = document.getElementById("contact").value;
+			if(input=="")
+			{
+					document.getElementById('contact').value = "";
+					document.getElementById('contactval').innerHTML = "Please enter your contact";
+					input.focus();
+					return false;
+			}
+			else if(isNaN(input))
+			{
+					document.getElementById('contact').value = "";
+					document.getElementById('contactval').innerHTML = "Characters not allowed";
+					input.focus();
+					return false;
+			}
+			else if(input.length<10)
+			{
+					document.getElementById('contact').value = "";
+					document.getElementById('contactval').innerHTML = "Contact Number should be atleast 10 digits";
+					input.focus();
+					return false;
+			}			
+			document.getElementById("contactval").innerHTML="";
+			
+			input = document.getElementById("comment").value;
+			if(input=="")
+			{
+					document.getElementById('comment').value = "";
+					document.getElementById('commentval').innerHTML = "Please enter your feedback";
+					input.focus();
+					return false;
+			}
+			document.getElementById('commentval').innerHTML = "";
+
+			if(input)
+			{
+				window.location.replace("success.html");
+				
+			}
+			
+		} 
+			*/
+		
+			function validateName()
+			{
+				var input = document.getElementById("name").value;			
+				var namepattern = /^[a-zA-Z\sa-zA-Z]+$/;
+				
+				if(input=="")
+				{					
+					document.getElementById("nameval").innerHTML="Please enter your name";				                  
+					document.getElementById("name").value="";			
+					document.getElementById("name").focus();			
+				}
+			    else if(!isNaN(input))
+				{					
+					document.getElementById("nameval").innerHTML="Numbers not allowed";				                  
+					document.getElementById("name").value="";			
+					document.getElementById("name").focus();			
+				}
+				else if(input.length<=2)
+				{
+					
+					document.getElementById("nameval").innerHTML="Name should be atleast 3 characters";
+					return false;
+					
+					
+				}
+				
+				else if (input.length > 20)
+                {
+                    document.getElementById("name").value="";			
+                    document.getElementById('nameval').innerHTML = "Please enter less than 20 characters";
+                    document.getElementById("name").focus();			
+                    return false;
+				}
+				else if ((!namepattern.test(input)))
+                {
+					document.getElementById("name").value="";			
+                    document.getElementById('nameval').innerHTML = "Please enter only alphabets";                    
+                    document.getElementById("name").focus();			
+                    return false;
+				}
+				else
+				document.getElementById('nameval').innerHTML = "";
+				return true;				
+			}
+			
+			function validateEmail()
+			{
+				var input = document.getElementById("email").value;
+				var emailpattern = /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.([a-zA-Z]{2,4})$/;
+				if (input =="")
+				{                    
+                    document.getElementById('emailval').innerHTML = "Please enter the email id.";
+                    document.getElementById("email").focus();
+                    return false;
+				}
+				else if(input.length > 50)
+				{					
+				    document.getElementById('email').value = "";
+					document.getElementById('emailval').innerHTML = "Exceeds maximum length";
+					document.getElementById("email").focus();
+					return false;
+				}
+                else if(!emailpattern.test(input))
+				{					
+					document.getElementById('emailval').innerHTML = "Email Id not valid";
+					document.getElementById("email").focus();
+					return false;
+				}				
+				else
+					document.getElementById('emailval').innerHTML = "";
+					return true;
+			}
+			
+						
+			function validateComment()
+			{
+			var input = document.getElementById("comment").value;
+				if(input.length<9)
+				{
+					document.getElementById("commentval").innerHTML="Feedback must be atlease 10 characters";
+					return false;
+				}
+				else				
+				document.getElementById("commentval").innerHTML="";
+				document.getElementById('comment').onkeyup = function check () {
+				document.getElementById('count').innerHTML = "Characters left: " + (500 - this.value.length);				
+				};		return true;
+				
+			}
+			
+			function checkAllFunctions()
+			{
+				if(validateName() && validateEmail() && validateComment() )
+				{
+					window.location.replace("success.html");
+					document.getElementById("correct").style.display="none";					
+				}
+				else
+				{
+					document.getElementById("correct").style.display="block";					
+				}
+			
+			}	
+			
+			
+			
+			function ct()
+			{
+				s.linkTrackVars="eVar15,prop15,events";
+				s.linkTrackEvents="event23";
+				s.eVar15="akash"; 
+				s.events="event23";
+				s.tl(this,'e','my link'); 
+			}
+			
+		</script>		
+	</head>
+	<body>
+		
+	
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQJ5TDV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="container-fluid">
+		<nav class="navbar collapse navbar-collapse">
+			<div class="navbar-header">
+				<img src="img/logo.jpg" style="height:200px; width:1200px; text-align:center;"/>				
+			</div>		
+			<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="index-2.html"><button type="button" class="btn btn-primary btn-lg">Home</button></a>
+			</div>
+			<div class="btn-group">
+				<a href="services.html"><button type="button" class="btn btn-primary btn-lg">Services</button></a>
+			</div>
+			<div class="btn-group">
+			<a href="about.html"><button type="button" class="btn btn-primary btn-lg">About us</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="feedback.html"><button type="button" class="btn btn-primary btn-lg">Feedback</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+			</div> 
+			</div>								
+		</nav>	
+		</div>
+<!-- part reserved for header -->		
+			<div class="container" id="form" align="center">					
+			<h2>Feedback Form</h2>					
+				<div class="form-group">
+				<input type="text" class="form-control" id="feedbackID" value="FB1008" readonly/>
+				<label for="usr">Name:</label>
+				<input type="text" class="form-control" id="name" onkeyup="validateName();"/>
+				<span id="nameval" style="color:red"></span>
+				</div>
+				<br/>
+			<div class="form-group">
+				<label for="pwd">Email</label>
+				<input type="text" class="form-control" id="email" onkeyup="validateEmail();"/>
+				<span id="emailval" style="color:red"></span>
+			</div>
+			<br/>			
+			<br/>
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment" onkeyup="validateComment();" maxlength="500"></textarea>
+				<span id="commentval"  style="color:red"></span>
+				<span id="count"></span>
+			</div><br/><br/><br/><br/></br>
+			<div style="color:red;display:none" id="correct">Please correct the above inputs</div>
+				<button type="button" class="btn btn-primary" onclick="checkAllFunctions();">Submit your feedback</button>								
+				&nbsp;
+				
+				
+				<a href="https://abhishekdwao.blogspot.com/p/home-page-2021.html" onclick="ct();">
+				click here for partner website
+		        </a>
+
+			</div><br/><br/><br/><br/><br/><br/>
+			
+
+
+<iframe src="services.html" title="description"></iframe>
+
+		
+		<!--footer part-->			
+			<footer style="background-color:#282829">				
+					<div align="center"><img src="img/bpg.jpg" width="90" align="center"/><br/><strong style="color:white"> &copy;&nbsp;Body Power Gym</strong> </div>										
+			</footer>
+			
+			
+						<!-- SiteCatalyst code version: H.27.5. -->
+<script language="JavaScript" type="text/javascript" src="../../abacustraining6.india.eclerx.com/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=document.title; 
+s.server=window.location.hostname
+s.channel="web"
+s.pageType="html"
+s.prop1="Homepage"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state="Maharashtra";
+s.zip="400708";
+s.events=1
+s.products=""
+s.purchaseID=""
+s.eVar1="Homepage";
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://eclerx.sc.omtrdc.net/b/ss/eclerxtest/1/H.27.5--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.27.5. -->
+
+		
+	</body>
+
+<!-- Mirrored from akamishra.github.io/akash.mishra2.github.io/feedback.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Jun 2023 07:39:25 GMT -->
+</html>
