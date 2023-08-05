@@ -25,19 +25,11 @@ var klaroConfig = {
                 }
             `,
             onInit: `
-                // initialization code here (will be executed only once per page-load)
-                for(let k of Object.keys(opts.consents)){
-                    if (opts.consents[k]){
-                        let eventName = 'klaro-'+k+'-accepted'
-                        dataLayer.push({'event': eventName})
-                    }
-                }
-                // if consent for Google Analytics was granted we enable analytics storage
-                if (opts.consents[opts.vars.googleAnalyticsName || 'google-analytics']){                
+                // initialization code here (will be executed only once per page-load)             
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = function(){dataLayer.push(arguments)}
                 gtag('consent', 'default', {'ad_storage': 'denied', 'analytics_storage': 'denied'})
-                gtag('set', 'ads_data_redaction', true) }
+                gtag('set', 'ads_data_redaction', true)
             `,
             onDecline: `
                 // initialization code here (will be executed only once per page-load)
