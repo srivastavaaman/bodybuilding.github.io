@@ -28,6 +28,7 @@ var klaroConfig = {
                 // initialization code here (will be executed only once per page-load)             
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = function(){dataLayer.push(arguments)}
+                dataLayer.push({'event': 'klaro-google-analytics-accepted'})
                 gtag('consent', 'default', {'ad_storage': 'denied', 'analytics_storage': 'denied'})
                 gtag('set', 'ads_data_redaction', true)
             `,
